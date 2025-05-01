@@ -2,7 +2,7 @@ package model.dao.impl;
 
 import db.DB;
 import db.DbException;
-import model.dao.SelleDao;
+import model.dao.SellerDao;
 import model.entities.Department;
 import model.entities.Seller;
 
@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class SellerDaoJDBC implements SelleDao {
+public class SellerDaoJDBC implements SellerDao {
 
     private Connection conn;
 

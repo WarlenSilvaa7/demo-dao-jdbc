@@ -5,7 +5,7 @@ import model.dao.impl.SellerDaoJDBC;
 
 public class DaoFactory {
 
-    public static SelleDao createSellerDao(){
+    public static SellerDao createSellerDao(){
         return new SellerDaoJDBC(DB.getConnection());
     }
 }
