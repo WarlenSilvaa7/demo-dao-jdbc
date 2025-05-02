@@ -19,7 +19,6 @@ public class DepartmentDaoJDBC implements DepartmentDao {
 
     @Override
     public void insert(Department obj) {
-        /*
         PreparedStatement st = null;
         try {
             st = conn.prepareStatement(
@@ -50,7 +49,7 @@ public class DepartmentDaoJDBC implements DepartmentDao {
         }
         finally {
             DB.closeStatement(st);
-        }*/
+        }
 
     }
 
