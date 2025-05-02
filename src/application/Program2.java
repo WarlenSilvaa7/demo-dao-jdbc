@@ -3,8 +3,10 @@ package application;
 import model.dao.DaoFactory;
 import model.dao.DepartmentDao;
 import model.entities.Department;
+import model.entities.Seller;
 
 
+import java.util.List;
 import java.util.Scanner;
 
 public class Program2 {
@@ -16,6 +18,12 @@ public class Program2 {
         System.out.println("=== TEST 1: department findById =====");
         Department dep = departmentDao.findById(3);
         System.out.println(dep);
+
+        System.out.println("\n=== TEST 2: department findAll =====");
+        List<Department> list = departmentDao.findaAll();
+        for (Department d : list){
+            System.out.println(d);
+        }
 
     }
 }
